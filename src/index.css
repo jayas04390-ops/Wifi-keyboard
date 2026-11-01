@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-space: 'Space Grotesk', -apple-system, sans-serif;
+    --font-geist: 'Geist', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    --color-surface: #121318;
+    --color-surface-dim: #121318;
+    --color-surface-bright: #38393f;
+    --color-surface-low: #1a1b21;
+    --color-surface-container: #1e1f25;
+    --color-surface-high: #292a2f;
+    --color-surface-highest: #34343a;
+    --color-primary: #00f0ff;
+    --color-secondary: #05ffa1;
+    --color-tertiary: #b026ff;
+  }
+
+  body {
+    font-family: var(--font-geist);
+    background-color: var(--color-surface);
+    color: #e3e1e9;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  h1, h2, h3, h4, .font-headline {
+    font-family: var(--font-space);
+  }
+
+  code, pre, .font-telemetry {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* CyberTactile Keycap styles */
+.keycap-tactile {
+  background: linear-gradient(180deg, #252834 0%, #1a1c24 100%);
+  box-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.08) inset,
+    0 -2px 0 rgba(0, 0, 0, 0.45) inset,
+    0 3px 6px rgba(0, 0, 0, 0.35);
+  transition: all 0.06s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.keycap-tactile:active, .keycap-tactile.active-press {
+  background: linear-gradient(180deg, #171821 0%, #1f222d 100%);
+  transform: translateY(2px);
+  box-shadow: 
+    0 0 12px rgba(0, 240, 255, 0.4),
+    0 1px 0 rgba(0, 240, 255, 0.3) inset;
+  border-color: #00f0ff;
+  color: #dbfcff;
+}
+
+.keycap-modifier-active {
+  background: linear-gradient(180deg, #2b1d3d 0%, #1f142e 100%) !important;
+  border-color: #b026ff !important;
+  color: #efceff !important;
+  box-shadow: 0 0 14px rgba(176, 38, 255, 0.4), 0 1px 0 rgba(239, 206, 255, 0.3) inset !important;
+}
+
+.touchpad-surface {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.03) 0%, transparent 70%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 24px 24px, 24px 24px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #121318;
+}
+::-webkit-scrollbar-thumb {
+  background: #292a2f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34343a;
+}

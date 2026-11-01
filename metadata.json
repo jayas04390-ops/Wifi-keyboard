@@ -1,0 +1,6 @@
+{
+  "name": "CyberTactile - WiFi Keyboard & Mouse for Windows 11",
+  "description": "Professional WiFi keyboard, trackpad mouse, advanced text transfer, and media controller for Windows 11 with low-latency WebSocket communication and Python desktop agent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

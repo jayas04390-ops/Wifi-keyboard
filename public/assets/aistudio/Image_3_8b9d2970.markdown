@@ -1,0 +1,218 @@
+---
+name: CyberTactile Input
+colors:
+  surface: '#121318'
+  surface-dim: '#121318'
+  surface-bright: '#38393f'
+  surface-container-lowest: '#0d0e13'
+  surface-container-low: '#1a1b21'
+  surface-container: '#1e1f25'
+  surface-container-high: '#292a2f'
+  surface-container-highest: '#34343a'
+  on-surface: '#e3e1e9'
+  on-surface-variant: '#b9cacb'
+  inverse-surface: '#e3e1e9'
+  inverse-on-surface: '#2f3036'
+  outline: '#849495'
+  outline-variant: '#3b494b'
+  surface-tint: '#00dbe9'
+  primary: '#dbfcff'
+  on-primary: '#00363a'
+  primary-container: '#00f0ff'
+  on-primary-container: '#006970'
+  inverse-primary: '#006970'
+  secondary: '#f5fff4'
+  on-secondary: '#003920'
+  secondary-container: '#0affa1'
+  on-secondary-container: '#007145'
+  tertiary: '#fff2ff'
+  on-tertiary: '#4e0078'
+  tertiary-container: '#efceff'
+  on-tertiary-container: '#9300dc'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#7df4ff'
+  primary-fixed-dim: '#00dbe9'
+  on-primary-fixed: '#002022'
+  on-primary-fixed-variant: '#004f54'
+  secondary-fixed: '#54ffaa'
+  secondary-fixed-dim: '#00e38e'
+  on-secondary-fixed: '#002110'
+  on-secondary-fixed-variant: '#005230'
+  tertiary-fixed: '#f4d9ff'
+  tertiary-fixed-dim: '#e5b5ff'
+  on-tertiary-fixed: '#30004b'
+  on-tertiary-fixed-variant: '#7000a8'
+  background: '#121318'
+  on-background: '#e3e1e9'
+  surface-variant: '#34343a'
+typography:
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+  headline-lg-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Geist
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Geist
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Geist
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 16px
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 9px
+    fontWeight: '500'
+    lineHeight: 12px
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 0.75rem
+  margin: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1.25rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system expresses a high-performance, dark cyber-tactile aesthetic engineered for ultra-responsive low-latency remote interactions (WiFi Keyboard & Mouse bridging Android handhelds and Windows 11 host machines). 
+
+The target audience comprises power users, PC gamers, software engineers, and media center operators who demand absolute precision, instant perceptual feedback, and dependable hardware telemetry. The UI evokes the mechanical satisfaction of a premium physical input device combined with the sleek telemetry of advanced diagnostic avionics.
+
+Visual hallmarks include:
+- **Deep layered slate-zinc chassis architecture** providing an OLED-friendly, low-fatigue workspace.
+- **Physical keycap dimensionality** simulated through precise inner-glow rim lights and distinct press depths.
+- **Chroma-telemetry accents** delivering instantaneous, peripheral-vision status validation (emerald for active links, cyan for cursor and key inputs, electric violet for mode shifts).
+- **Haptic-synchronized feedback design** using localized energy rings, crisp edge highlights, and high-frequency tactile transitions.
+
+## Colors
+
+The palette pairs a cavernous, low-noise chassis with high-intensity luminescent markers. The base surface is deeply grounded in zinc-slate values to conserve battery and eliminate distraction in dim environments.
+
+### Signal & State Colors
+- **Primary (`#00f0ff` / Cyber Cyan):** Primary vector for transient input actions, touch-pad track trails, mouse button down states, and active pointer tracking.
+- **Secondary (`#05ffa1` / Emerald Link):** Telemetry status indicator reserved strictly for sub-5ms low-latency active links, stable socket states, and packet delivery confirmation.
+- **Tertiary (`#b026ff` / Electric Violet):** Modifier status flags, layer switching (NumPad, Media, GamePad mode), macro executions, and profile transitions.
+- **Neutral Chassis (`#090a0f` / Obsidian Void):** Base background level. Nested tiers build upward through `#12141c` (chassis wells), `#181b26` (surface plate), and `#222634` (resting keycaps).
+
+### Critical Functional Colors
+- **Telemetry Amber (`#ffb800`):** Jitter alerts, buffer spikes, and dynamic link renegotiation (>25ms).
+- **Telemetry Crimson (`#ff2a55`):** Socket drops, Windows service disconnects, or authentication failures.
+
+## Typography
+
+The typographic hierarchy uses a triad structure:
+1. **Space Grotesk** anchors primary device headers, profile displays, and modal viewports with mechanical, wide-aperture geometry.
+2. **Geist** guarantees neutral, razor-sharp clarity for dense setting panes, onboarding instructions, and contextual dialogues.
+3. **JetBrains Mono** powers real-time metrics (RTT latency, payload size, FPS, keyboard legends, keystroke buffers, and raw hex codes). All monospaced readouts maintain tabular figures (`tnum`) to eliminate micro-jitter during dynamic telemetry streaming.
+
+## Layout & Spacing
+
+The interface accommodates rapid dual-thumb input, multi-touch gestures, and rapid view switching between full keyboard, precision trackpad, and mixed media controllers.
+
+- **Grid Model:** Fluid modular layout utilizing safe-area dynamic framing. Key matrices adapt strictly via proportional column-span calculations to ensure ergonomic reach within the lower 60% of handheld touch displays.
+- **Breakpoints & Adaptation:**
+  - **Compact Handheld (< 480px):** Single-view focal layout. Tab-swappable surface modes (Trackpad / Full QWERTY / Numpad / Shortcuts). Edge margins set to `margin` (1rem) with micro-gap (`0.375rem`) key separation to maximize hit-target area.
+  - **Medium / Foldables (481px - 840px):** Split-deck ergonomics. Left thumb dedicated to modular navigation/D-pad/modifiers; right thumb dedicated to high-precision trackpad or primary action clusters.
+  - **Expanded / Windows Dual-Screen (\
+NŠŠˆÚ[][[™[Ý\È[™ØØ\HX[YXÚÈ^[Ý]ˆYIHÜ[œÈ\ÚXØ[Ù^X›Ø\™[][][ÛŽÈšYÚMIHÜÝÈHÙ\Ý\™HÝXÚYÚ][[Y]žHÚYXØ\œË‚‚ˆÈÈ[]˜][Ûˆ	ˆ\‚‘\\È\ÝX›\ÚY›ÝYÚ\ÚXØ[[™\ÝšX[^Y\š[™È[™™[Ûˆ\š[Y]\ˆ˜XÚÛYÚ[™È˜]\ˆ[ˆÛÙY™\ÙHÚYÝÜÎ‚‚‹H
+Š“]™[
+Ú\ÜÚ\È›Ý[™][ÛŠNŠŠˆÌLL˜ˆ[›]˜\ÙH^Y\ˆÝ\Ú[™ÈHÝXÝ\˜[Ý\Ú[™È[[Y[È[™šY]ÜÜ[˜ÚÜœË‚‹H
+Š“]™[H
+Ý\™˜XÙH˜^\È	ˆ˜XÚÜYÙ[ÊNŠŠˆÌLŒMXØÚ]H\[œÙ]›Ý[™\žH
+™Ø˜JMKMKMKŒJX
+KˆÜ™X]\ÈH™XÙ\ÜÙY\ÚXØ[Ú[›™[›ÜˆÙ^HÙ[È[™Ù\Ý\™HšY[Ë‚‹H
+Š“]™[ˆ
+™\Ý[™ÈÙ^XØ\È	ˆ[˜Ý[Û˜[Ø\™ÊNŠŠˆÌXÌŒ™Ú]HÜ\š[HZXÜ›ËZYÚYÚ
+\ÛÛY™Ø˜JMKMKMKŒLŠX
+H[™H›ÝÛH›Ü[Ù™œÙ]
+œ™Ø˜JŠX
+K[™[™È™X[\ÝXÈXÝ[H[]˜][Û‹‚‹H
+Š“]™[È
+XÝ]™HÈ\™\ÜÙYÙ^XØ\Ý]JNŠŠˆ˜[œÛ]\ÈÙ^XØ\ÝÛˆžHK\[™\ÈYÚ[™ÈÈHY\[œÙ]ÚYÝÈ
+[œÙ]œ™Ø˜JŽ
+X
+K[™šYÙÙ\œÈ[ˆÛ[šY\™XÝ[Û˜[›ÝÛH[È\Ú[™ÈHÛÛ^X[™[ÛˆXØÙ[
+Lœ™Ø˜JMKŒÍJX
+K‚‹H
+Š“]™[
+›Ø][™ÈÝ™\›^\È	ˆ˜YX[QÊNŠŠˆYÚX›\ˆœ›ÜÝYÛ\ÜÈÝ\™˜XÙ\È
+˜XÚÙ›ÜYš[\Žˆ›\ŠMœ
+NÈ˜XÚÙÜ›Ý[™ˆ™Ø˜JNŒŽŽJNÈ›Ü™\Žˆ\ÛÛY™Ø˜JMKŒJX
+K‚‚ˆÈÈÚ\\Â‚•H\ÚYÛˆÞ\Ý[H[\Þ\ÈHÛÙXXÚ[™K[Z[YÛÜ›™\ˆ˜Y]\È
+›Ý[™Y™\ÜÎˆX
+Kˆ‚‹HY˜][[[Y[È
+Ù^\Ë˜YÙ\Ë™XYÝ]ÊH\ÙHŒ\™[X
+
+H˜YZKÚ]š[™ÈH[\™\ÜÚ[ÛˆÙˆ™XÚ\Ú[Û‹Y^YY•Ù^XØ\È[™ÓË[XXÚ[™YÛ]H]\Ë‚‹HÝ]\ˆÛÛZ[™\ˆœ˜[Y\ËÙ\Ý\™HYË[™›Ø][™È[[Y]žH[ÈYÜ›Ý[™Y[Ø
+\™[XÈ
+K‚‹HÝ]\È™XXÛÛœË[˜[ZXÈÚ[\ˆYÚYÚË[™[Xˆ›Þ\ÝXÚÜÈœ™XZÈ\ÈÛÛ™[[ÛˆžH\Ú[™È[Ú\˜Ý[\ˆØ\Ý[\È
+›Ý[™YY[
+HÈÛÛ˜\Ý\ÚXØ[ÝÚ]ÚÙX\ˆYØZ[œÝÛÙ[˜[ÙÈ[œ]\™X\Ë‚‚ˆÈÈÛÛ\Û™[Â‚ˆÈÈÈÙ^\È	ˆXÝ[H]ÛœÂ‹H
+Š”™\Ý[™ÎŠŠˆ˜XÚÙÜ›Ý[™ÌYLŒŒÌÝXHÜ›Ü™\ˆYÚYÚ™Ø˜JMKMKMKŒLŠX\ÙÜ˜\H[ˆÜš\ÜÚ]HÙM™NYX‚‹H
+Š‘ÝÛˆÈ\XÈ™\ÜÎŠŠˆÝÛØ\™˜[œÙ›Ü›H˜[œÛ]VJK\
+XÝ\™˜XÙH›ÜÈÈÌLLLÌXX›Ü™\ˆ\›œÈ™Ø˜JMKÊX^ÝÚ]Ú\ÈÈÞX[ˆÌŒ™˜Ú]HØØ[^™YÛÝÈ
+^\ÚYÝÎˆ™Ø˜JMKŠX
+K‚‹H
+Š“[ÙYšY\ˆÙÙÛH
+ÚYÐÝ›Ð[Ñ›ŠNŠŠˆ˜XÚÙÜ›Ý[™ØÚÜÈÈÌŒŒNÌ˜XÝ]™H›Ü™\ˆÛÝÜÈ[XÝšXÈš[Û]ØŒ™™˜\Ü^Z[™È[ˆ[[Z[˜]YQ\[ˆH\\ˆÛÜ›™\‹‚‚ˆÈÈÈ™XÚ\Ú[ÛˆÝXÚYÝ\™˜XÙB‹H™XÙ\ÜÙYX]HØ[˜\ÈÌLLMØ›[šÙYžH]ÚYÛÛÜ™[˜]HÜ›ÜÜÚZ\œÈ[ˆ™Ø˜JMKMKMKŒ
+X‚‹H][K]ÝXÚÛÛXÝÈÜ]Ûˆ[˜[ZXÈÞX[ˆ[™\™ÞHš[™ÜÈÚ][œÝ[[™[Ý\È˜YK[Ý]XØ^HÝ\™\Ë‚‹HÛËYš[™Ù\ˆØÜ›Û›Û™\È[X\˜Ø]YÚ]ÝXH™\XØ[ZXÜ›ËYÜ›ÛÝ™H˜XÚÜË‚‚ˆÈÈÈÛÛ›™XÝ[Ûˆ[[Y]žH[‹HÛÛ\XÝ[[[Y[
+›Ý[™YY[
+H[˜ÚÜ™Y]HÜ\šYÚšY]ÜÜ‚‹HÛÛZ[œÈH[Ø][™ÈœÚ\˜Ý[\ˆQ
+[Y\˜[›ÜˆL\È[™Ë[X™\ˆ›Üˆš]\ˆŒ[\ËÜš[\ÛÛˆ›Üˆ\ØÛÛ›™XÝY
+K‚‹HX[\ˆ[Û›ÜÜXÙH™XYÝ]È
+L\™]œ˜Z[œÈ[Û›Ø
+H\Ü^Z[™È]™HY]šXÜÎˆ•Œ›\ÈLŒˆQTËQÐÓX‚‚ˆÈÈÈ[ÙH	ˆXXÜ›ÈÚ\Â‹HÙYÛY[YÝÚ]Ú\ÈÝ[Y\ÈÝË\›Ùš[H›ØÚË\ÝÚ]Ú\Ë‚‹H[˜XÝ]™HÝ]NˆÌMLNŒ˜^Í™MÍŽ˜‚‹HÙ[XÝYÝ]Nˆ[œÙ][[Z[˜][Ûˆ[™\ˆHÙ[XÝYÚ\Ú][ˆ[XÝšXÈš[Û]XØÙ[[™XØ]Üˆ[™H
+œ
+H[Û™ÈH›ÝÛHYÙK‚‚ˆÈÈÈ[œ]šY[È	ˆÙ[œÚ]]š]HÛY\œÂ‹H
+Š”ÛY\œÎŠŠˆ™XÙ\ÜÙYš[˜È˜XÚÈ
+ÌLLŒXX
+HZ\™YÚ]HYÚXÛÛ˜\ÝÞX[ˆ[Xˆ[
+Mœ
+H]Ø\ÝÈ[ˆXÝ]™HÞX[ˆ›Ü[[Z[˜][ÛˆÚ[H[‚‹H
+Š•˜[YH[œ]ÎŠŠˆ[Û›ÜÜXÙYšY[È›Ü™\™YžHÝËXÛÛ˜\Ýš[˜È›Ü™\œÈ
+ÌŽL™M
+K˜[œÚ][Ûš[™ÈÈHYÚXÛÛ˜\ÝÞX[ˆÛÝÈÛˆ›ØÝ\Ë

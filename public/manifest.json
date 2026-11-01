@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "CyberTactile - WiFi Keyboard & Mouse",
+  "short_name": "CyberTactile",
+  "description": "Control your Windows 11 PC from an Android smartphone via WiFi with low-latency keyboard, multi-touch trackpad, and media controls.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121318",
+  "theme_color": "#121318",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
